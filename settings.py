@@ -1,4 +1,5 @@
 # Django settings for afoodable_deals project.
+from db_settings import *
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -9,6 +10,8 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+"""
+# hopefully this can be imported from db_settings
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -19,7 +22,7 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
-
+"""
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
